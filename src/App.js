@@ -1,9 +1,11 @@
-function App() {
+import { DropDownLanguages } from "./components/DropDownLanguages";
+
+const App = () => {
   return (
-    <div className="App">
-Test
+    <div>
+      <DropDownLanguages />
     </div>
   );
-}
+};
 
 export default App;
