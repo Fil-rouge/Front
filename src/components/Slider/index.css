@@ -1,0 +1,21 @@
+.slider-dots {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.slider-dot {
+  font-size: 8px;
+  color: #c4c4c4;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.slider-arrow {
+  cursor: pointer;
+}
+
+.slider-dot.active-slide {
+  color: black;
+  font-size: 10px;
+}

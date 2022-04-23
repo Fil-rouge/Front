@@ -1,7 +1,10 @@
+import { SliderDots } from "./components/SliderDots";
+import "remixicon/fonts/remixicon.css";
+
 function App() {
   return (
     <div className="App">
-Test
+      <SliderDots nbSlides="5" defaultActiveSlide="3" />
     </div>
   );
 }
