@@ -17,7 +17,7 @@ const ContainerStyle = styled.div`
 `;
 
 export const DropDownLanguages = () => (
-  <ContainerStyle>
+  <ContainerStyle className="dropdown-languages">
     <i className="ri-earth-line"></i> 
     <p>Français</p>
     <img src={flag_of_france} alt="french flag" />

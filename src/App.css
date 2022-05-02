@@ -1,0 +1,44 @@
+@import url("Fonts.css");
+@import url("Variables.css");
+
+p {
+  font-family: "Itim";
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+a {
+  font-family: "Gotham";
+}
+
+a {
+  color: var(--secondary-black);
+}
+
+#homepage {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#homepage .dropdown-languages {
+  margin: auto;
+}
+
+#homepage .homepage-img {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+}
