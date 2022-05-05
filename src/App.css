@@ -3,10 +3,18 @@
 
 p {
   font-family: "Itim";
+  font-size: 16px;
+  margin: 0;
 }
 
 body {
   overflow-x: hidden;
+  margin: 0;
+}
+
+body,
+#root {
+  min-height: 100vh;
 }
 
 h1,
@@ -16,29 +24,164 @@ h4,
 h5,
 h6,
 button,
-a {
+a,
+label {
   font-family: "Gotham";
+  margin: 0;
 }
 
 a {
   color: var(--secondary-black);
 }
 
+h1 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 23px;
+}
+
+/* HOMEPAGE */
 #homepage {
   display: flex;
   text-align: center;
   flex-direction: column;
-  padding: 20px;
+  padding: var(--side-margin);
+  padding-bottom: 0;
+  height: calc(100vh - var(--side-margin));
 }
 
 #homepage .dropdown-languages {
-  margin: auto;
+  margin: 20px auto 0 auto;
+}
+
+#homepage h1 {
+  margin-top: 40px;
+}
+
+#homepage h3 {
+  margin-top: 72px;
+}
+
+#homepage p.desc {
+  margin-top: 16px;
+}
+
+#homepage .buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+#homepage .forgot-pwd {
+  font-size: 10px;
+  text-align: right;
+  font-weight: 700;
 }
 
 #homepage .homepage-img {
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  margin-top: auto;
+}
+
+
+/* CONNEXION */
+#connection {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: var(--side-margin);
+  padding-bottom: 0;
+  height: calc(100vh - var(--side-margin));
+}
+
+#connection .go-back-arrow {
   position: absolute;
-  width: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0px;
+  top: 16px;
+  left: 16px;
+}
+
+#connection h1 {
+  margin-top: 70px;
+}
+
+#connection h3 {
+  margin-top: 70px;
+  text-align: left;
+  border-bottom: 1px solid var(--primary-purple-light);
+  padding-bottom: 5px;
+}
+
+#connection .connection-img {
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  margin-top: auto;
+}
+
+#connection .login-details {
+  margin: 25px 0;
+}
+
+#connection .login-details .urstock-input:first-of-type {
+  margin-bottom: 16px;
+}
+
+#connection .forgot-pwd {
+  font-size: 10px;
+  text-align: right;
+  display: block;
+  margin-top: 8px;
+  font-weight: 700;
+}
+
+
+/* REGISTER */
+#register {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: var(--side-margin);
+  padding-bottom: 0;
+  height: calc(100vh - var(--side-margin));
+}
+
+#register .go-back-arrow {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+#register h1 {
+  margin-top: 70px;
+}
+
+#register h3 {
+  margin-top: 70px;
+  text-align: left;
+  border-bottom: 1px solid var(--primary-purple-light);
+  padding-bottom: 5px;
+}
+
+#register .register-details {
+  margin: 25px 0;
+}
+
+#register .register-details .urstock-input:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+#register .urstock-cgu {
+  font-size: 10px;
+  text-align: left;
+  display: flex;
+  gap: 3px;
+  font-weight: 700;
+}
+
+#register .urstock-cgu input {
+  width: 8px;
+  margin: 0;
+  border-radius: 5px;
 }

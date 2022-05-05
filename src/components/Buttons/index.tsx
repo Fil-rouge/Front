@@ -38,9 +38,12 @@ export const StyledButton = styled.button`
   transition: ease background-color 0.6s;
   color: white;
   font-weight: 700;
+  font-size: 16px;
+
   &:hover {
     background-color: ${(props) => theme[props.theme].hover};
   }
+  
   &:disabled {
     cursor: default;
     opacity: 0.7;
@@ -55,7 +58,7 @@ StyledButton.defaultProps = {
 export const Button = ({message, size, theme}) => {
   return (
     <>
-      <StyledButton size={size} theme={theme}>{message}</StyledButton>
+      <StyledButton className="urstock-button" size={size} theme={theme}>{message}</StyledButton>
     </>
   );
 }
